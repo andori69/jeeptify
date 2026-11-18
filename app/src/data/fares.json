@@ -1,0 +1,9 @@
+{
+  "version": "2026-09-28",
+  "effective_date": "2026-09-28",
+  "verified": false,
+  "traditional": { "base": 14, "base_km": 4, "per_km": 2.0 },
+  "modern": { "base": 17, "base_km": 4, "per_km": 2.4 },
+  "discount": 0.2,
+  "round_to": 0.25
+}

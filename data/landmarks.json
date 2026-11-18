@@ -1,0 +1,659 @@
+{
+ "source": "OpenStreetMap contributors (ODbL), fetched 2026-11-18 via Overpass; names not verified, aliases hand-added",
+ "landmarks": [
+  {
+   "id": "acmac-barangay-hall",
+   "name": "Acmac Barangay Hall",
+   "type": "townhall",
+   "lat": 8.27349,
+   "lon": 124.26521,
+   "aliases": []
+  },
+  {
+   "id": "adventist-medical-center",
+   "name": "Adventist Medical Center",
+   "type": "hospital",
+   "lat": 8.24075,
+   "lon": 124.24738,
+   "aliases": []
+  },
+  {
+   "id": "adventist-medical-center-college",
+   "name": "Adventist Medical Center College",
+   "type": "college",
+   "lat": 8.24038,
+   "lon": 124.24776,
+   "aliases": []
+  },
+  {
+   "id": "bagong-silang-barangay-hall",
+   "name": "Bagong Silang Barangay Hall",
+   "type": "townhall",
+   "lat": 8.24141,
+   "lon": 124.25144,
+   "aliases": []
+  },
+  {
+   "id": "bahay-pamahalaan-ng-barangay-tipanoy",
+   "name": "Barangay Tipanoy",
+   "type": "townhall",
+   "lat": 8.19863,
+   "lon": 124.24847,
+   "aliases": []
+  },
+  {
+   "id": "bahay-pamahalaan-ng-barangay-ubaldo-laya",
+   "name": "Barangay Ubaldo Laya",
+   "type": "townhall",
+   "lat": 8.22416,
+   "lon": 124.24467,
+   "aliases": []
+  },
+  {
+   "id": "bonbonon-barangay-hall",
+   "name": "Bonbonon Barangay Hall",
+   "type": "townhall",
+   "lat": 8.26613,
+   "lon": 124.29137,
+   "aliases": []
+  },
+  {
+   "id": "bunawan-barangay-hall",
+   "name": "Bunawan Barangay Hall",
+   "type": "townhall",
+   "lat": 8.30332,
+   "lon": 124.30433,
+   "aliases": []
+  },
+  {
+   "id": "buru-un-barangay-hall",
+   "name": "Buru-un Barangay Hall",
+   "type": "townhall",
+   "lat": 8.18738,
+   "lon": 124.16874,
+   "aliases": []
+  },
+  {
+   "id": "ced-park",
+   "name": "CED Park",
+   "type": "park",
+   "lat": 8.24241,
+   "lon": 124.24371,
+   "aliases": []
+  },
+  {
+   "id": "cirilo-isabel-badelles-park",
+   "name": "Cirilo-Isabel Badelles Park",
+   "type": "park",
+   "lat": 8.22595,
+   "lon": 124.25946,
+   "aliases": []
+  },
+  {
+   "id": "colegio-de-iligan",
+   "name": "Colegio de Iligan",
+   "type": "college",
+   "lat": 8.20857,
+   "lon": 124.21549,
+   "aliases": []
+  },
+  {
+   "id": "dalipuga-barangay-hall",
+   "name": "Dalipuga Barangay Hall",
+   "type": "townhall",
+   "lat": 8.30613,
+   "lon": 124.25823,
+   "aliases": []
+  },
+  {
+   "id": "dansalan-college-foundation-iligan-annex",
+   "name": "Dansalan College Foundation Iligan Annex",
+   "type": "college",
+   "lat": 8.26252,
+   "lon": 124.2747,
+   "aliases": []
+  },
+  {
+   "id": "del-carmen-barangay-hall",
+   "name": "Del Carmen Barangay Hall",
+   "type": "townhall",
+   "lat": 8.23212,
+   "lon": 124.25803,
+   "aliases": []
+  },
+  {
+   "id": "digkilaan-barangay-hall",
+   "name": "Digkilaan Barangay Hall",
+   "type": "townhall",
+   "lat": 8.24901,
+   "lon": 124.31768,
+   "aliases": []
+  },
+  {
+   "id": "ditucalan-barangay-hall",
+   "name": "Ditucalan Barangay Hall",
+   "type": "townhall",
+   "lat": 8.17569,
+   "lon": 124.19329,
+   "aliases": []
+  },
+  {
+   "id": "dr-uy-hospital",
+   "name": "Dr. Uy Hospital",
+   "type": "hospital",
+   "lat": 8.22728,
+   "lon": 124.24053,
+   "aliases": []
+  },
+  {
+   "id": "e-r-hospital-and-pharmacy",
+   "name": "E & R Hospital and Pharmacy",
+   "type": "hospital",
+   "lat": 8.23379,
+   "lon": 124.23813,
+   "aliases": []
+  },
+  {
+   "id": "gaisano-iligan",
+   "name": "Gaisano Iligan",
+   "type": "mall",
+   "lat": 8.23075,
+   "lon": 124.24139,
+   "aliases": [
+    "Gaisano"
+   ]
+  },
+  {
+   "id": "gaisano-iligan-main",
+   "name": "Gaisano Iligan Main",
+   "type": "mall",
+   "lat": 8.22933,
+   "lon": 124.2342,
+   "aliases": [
+    "Gaisano Main"
+   ]
+  },
+  {
+   "id": "gregorio-t-lluch-memorial-hospital",
+   "name": "Gregorio T. Lluch Memorial Hospital",
+   "type": "hospital",
+   "lat": 8.226,
+   "lon": 124.25455,
+   "aliases": []
+  },
+  {
+   "id": "hall-of-justice",
+   "name": "Hall of Justice",
+   "type": "courthouse",
+   "lat": 8.21369,
+   "lon": 124.23953,
+   "aliases": []
+  },
+  {
+   "id": "hinaplanon-barangay-hall",
+   "name": "Hinaplanon Barangay Hall",
+   "type": "townhall",
+   "lat": 8.24662,
+   "lon": 124.25957,
+   "aliases": []
+  },
+  {
+   "id": "hinaplanon-barangay-market",
+   "name": "Hinaplanon Barangay Market",
+   "type": "marketplace",
+   "lat": 8.24738,
+   "lon": 124.25993,
+   "aliases": []
+  },
+  {
+   "id": "iligan-capitol-college",
+   "name": "Iligan Capitol College",
+   "type": "college",
+   "lat": 8.22247,
+   "lon": 124.24083,
+   "aliases": []
+  },
+  {
+   "id": "iligan-city-central-market",
+   "name": "Iligan City Central Market",
+   "type": "marketplace",
+   "lat": 8.22881,
+   "lon": 124.23424,
+   "aliases": [
+    "Central Market",
+    "Palengke",
+    "Public Market"
+   ]
+  },
+  {
+   "id": "iligan-city-hall",
+   "name": "Iligan City Hall",
+   "type": "townhall",
+   "lat": 8.22604,
+   "lon": 124.2518,
+   "aliases": [
+    "City Hall",
+    "Munisipyo"
+   ]
+  },
+  {
+   "id": "iligan-city-integrated-bus-and-jeepney-terminal",
+   "name": "Iligan City Integrated Bus and Jeepney Terminal",
+   "type": "bus_station",
+   "lat": 8.24183,
+   "lon": 124.26049,
+   "aliases": [
+    "Tambo Terminal",
+    "Bus Terminal",
+    "Integrated Terminal"
+   ]
+  },
+  {
+   "id": "iligan-city-integrated-bus-and-jeepney-terminal-west",
+   "name": "Iligan City Integrated Bus and Jeepney Terminal - West",
+   "type": "bus_station",
+   "lat": 8.20728,
+   "lon": 124.21626,
+   "aliases": [
+    "West Terminal",
+    "Westbound Terminal"
+   ]
+  },
+  {
+   "id": "iligan-city-south-bound-terminal",
+   "name": "Iligan City South Bound Terminal",
+   "type": "bus_station",
+   "lat": 8.21321,
+   "lon": 124.22915,
+   "aliases": [
+    "South Terminal",
+    "Southbound Terminal"
+   ]
+  },
+  {
+   "id": "iligan-city-wet-park",
+   "name": "Iligan City Wet Park",
+   "type": "park",
+   "lat": 8.237,
+   "lon": 124.25285,
+   "aliases": []
+  },
+  {
+   "id": "iligan-medical-center-college",
+   "name": "Iligan Medical Center College",
+   "type": "college",
+   "lat": 8.23132,
+   "lon": 124.24912,
+   "aliases": []
+  },
+  {
+   "id": "iligan-medical-center-hospital",
+   "name": "Iligan Medical Center Hospital",
+   "type": "hospital",
+   "lat": 8.23081,
+   "lon": 124.24917,
+   "aliases": []
+  },
+  {
+   "id": "iligan-public-plaza",
+   "name": "Iligan Public Plaza",
+   "type": "park",
+   "lat": 8.22853,
+   "lon": 124.23717,
+   "aliases": [
+    "Plaza",
+    "Public Plaza"
+   ]
+  },
+  {
+   "id": "kiwalan-barangay-hall",
+   "name": "Kiwalan Barangay Hall",
+   "type": "townhall",
+   "lat": 8.27971,
+   "lon": 124.2668,
+   "aliases": []
+  },
+  {
+   "id": "lord-jesus-cathedral-of-worship",
+   "name": "Lord Jesus Cathedral of Worship",
+   "type": "place_of_worship",
+   "lat": 8.22757,
+   "lon": 124.23942,
+   "aliases": []
+  },
+  {
+   "id": "luinab-barangay-hall",
+   "name": "Luinab Barangay Hall",
+   "type": "townhall",
+   "lat": 8.24706,
+   "lon": 124.26783,
+   "aliases": []
+  },
+  {
+   "id": "lyceum-of-iligan-foundation",
+   "name": "Lyceum of Iligan Foundation",
+   "type": "college",
+   "lat": 8.21721,
+   "lon": 124.23722,
+   "aliases": []
+  },
+  {
+   "id": "mahayahay-barangay-hall",
+   "name": "Mahayahay Barangay Hall",
+   "type": "townhall",
+   "lat": 8.22452,
+   "lon": 124.2381,
+   "aliases": []
+  },
+  {
+   "id": "mandulog-barangay-hall",
+   "name": "Mandulog Barangay Hall",
+   "type": "townhall",
+   "lat": 8.24453,
+   "lon": 124.30569,
+   "aliases": []
+  },
+  {
+   "id": "mapalad-centennial-park",
+   "name": "Mapalad Centennial Park",
+   "type": "park",
+   "lat": 8.31995,
+   "lon": 124.24819,
+   "aliases": []
+  },
+  {
+   "id": "maria-cristina-barangay-hall",
+   "name": "Maria Cristina Barangay Hall",
+   "type": "townhall",
+   "lat": 8.19869,
+   "lon": 124.1936,
+   "aliases": []
+  },
+  {
+   "id": "medical-rotunda-park",
+   "name": "Medical Rotunda Park",
+   "type": "park",
+   "lat": 8.23027,
+   "lon": 124.24955,
+   "aliases": []
+  },
+  {
+   "id": "mercy-community-hospital",
+   "name": "Mercy Community Hospital",
+   "type": "hospital",
+   "lat": 8.21502,
+   "lon": 124.23089,
+   "aliases": []
+  },
+  {
+   "id": "miguel-sheker-park",
+   "name": "Miguel Sheker Park",
+   "type": "park",
+   "lat": 8.23878,
+   "lon": 124.24881,
+   "aliases": []
+  },
+  {
+   "id": "mindanao-sanitorium-and-hospital-college",
+   "name": "Mindanao Sanitorium and Hospital College",
+   "type": "hospital",
+   "lat": 8.24169,
+   "lon": 124.24818,
+   "aliases": []
+  },
+  {
+   "id": "mindanao-state-university-iligan-institute-of-technology",
+   "name": "Mindanao State University - Iligan Institute of Technology",
+   "type": "university",
+   "lat": 8.24158,
+   "lon": 124.24351,
+   "aliases": [
+    "MSU-IIT",
+    "IIT",
+    "MSU",
+    "Mindanao State University"
+   ]
+  },
+  {
+   "id": "pala-o-barangay-hall",
+   "name": "Pala-o Barangay Hall",
+   "type": "townhall",
+   "lat": 8.2289,
+   "lon": 124.25402,
+   "aliases": []
+  },
+  {
+   "id": "pala-o-market",
+   "name": "Pala-o Market",
+   "type": "marketplace",
+   "lat": 8.22691,
+   "lon": 124.24335,
+   "aliases": [
+    "Palao Market",
+    "Palengke Pala-o"
+   ]
+  },
+  {
+   "id": "peace-park",
+   "name": "Peace Park",
+   "type": "park",
+   "lat": 8.23962,
+   "lon": 124.24445,
+   "aliases": []
+  },
+  {
+   "id": "poblacion-barangay-hall",
+   "name": "Poblacion Barangay Hall",
+   "type": "townhall",
+   "lat": 8.22869,
+   "lon": 124.23346,
+   "aliases": []
+  },
+  {
+   "id": "puga-an-barangay-hall",
+   "name": "Puga-an Barangay Hall",
+   "type": "townhall",
+   "lat": 8.22888,
+   "lon": 124.27467,
+   "aliases": []
+  },
+  {
+   "id": "rabago-park",
+   "name": "Rabago Park",
+   "type": "park",
+   "lat": 8.23039,
+   "lon": 124.24471,
+   "aliases": []
+  },
+  {
+   "id": "rizal-park",
+   "name": "Rizal Park",
+   "type": "park",
+   "lat": 8.24224,
+   "lon": 124.2441,
+   "aliases": []
+  },
+  {
+   "id": "saint-michael-the-archangel-cathedral",
+   "name": "Saint Michael the Archangel Cathedral",
+   "type": "place_of_worship",
+   "lat": 8.22932,
+   "lon": 124.23946,
+   "aliases": [
+    "Cathedral",
+    "Simbahan"
+   ]
+  },
+  {
+   "id": "saint-michael-s-college",
+   "name": "Saint Michael's College",
+   "type": "college",
+   "lat": 8.23931,
+   "lon": 124.24975,
+   "aliases": []
+  },
+  {
+   "id": "san-miguel-barangay-hall",
+   "name": "San Miguel Barangay Hall",
+   "type": "townhall",
+   "lat": 8.23885,
+   "lon": 124.24887,
+   "aliases": []
+  },
+  {
+   "id": "san-roque-barangay-hall",
+   "name": "San Roque Barangay Hall",
+   "type": "townhall",
+   "lat": 8.25743,
+   "lon": 124.26176,
+   "aliases": []
+  },
+  {
+   "id": "santa-elena-barangay-hall",
+   "name": "Santa Elena Barangay Hall",
+   "type": "townhall",
+   "lat": 8.19477,
+   "lon": 124.22682,
+   "aliases": []
+  },
+  {
+   "id": "santa-filomena-barangay-hall",
+   "name": "Santa Filomena Barangay Hall",
+   "type": "townhall",
+   "lat": 8.26925,
+   "lon": 124.26067,
+   "aliases": []
+  },
+  {
+   "id": "santiago-barangay-hall",
+   "name": "Santiago Barangay Hall",
+   "type": "townhall",
+   "lat": 8.25061,
+   "lon": 124.24433,
+   "aliases": []
+  },
+  {
+   "id": "santo-rosario-barangay-hall",
+   "name": "Santo Rosario Barangay Hall",
+   "type": "townhall",
+   "lat": 8.243,
+   "lon": 124.25274,
+   "aliases": []
+  },
+  {
+   "id": "saray-barangay-hall",
+   "name": "Saray Barangay Hall",
+   "type": "townhall",
+   "lat": 8.23538,
+   "lon": 124.23689,
+   "aliases": []
+  },
+  {
+   "id": "st-mary-hospital",
+   "name": "St. Mary Hospital",
+   "type": "hospital",
+   "lat": 8.22872,
+   "lon": 124.24204,
+   "aliases": []
+  },
+  {
+   "id": "st-paul-s-institute-of-technology",
+   "name": "St. Paul's Institute of Technology",
+   "type": "college",
+   "lat": 8.24247,
+   "lon": 124.24586,
+   "aliases": []
+  },
+  {
+   "id": "st-peter-s-college-iligan-city",
+   "name": "St. Peter's College Iligan City",
+   "type": "college",
+   "lat": 8.23115,
+   "lon": 124.23612,
+   "aliases": []
+  },
+  {
+   "id": "suarez-barangay-hall",
+   "name": "Suarez Barangay Hall",
+   "type": "townhall",
+   "lat": 8.19158,
+   "lon": 124.2178,
+   "aliases": []
+  },
+  {
+   "id": "talipapa",
+   "name": "Talipapa",
+   "type": "marketplace",
+   "lat": 8.18798,
+   "lon": 124.17239,
+   "aliases": []
+  },
+  {
+   "id": "tambacan-barangay-hall",
+   "name": "Tambacan Barangay Hall",
+   "type": "townhall",
+   "lat": 8.22395,
+   "lon": 124.23463,
+   "aliases": []
+  },
+  {
+   "id": "tambo-public-market",
+   "name": "Tambo Public Market",
+   "type": "marketplace",
+   "lat": 8.24311,
+   "lon": 124.26026,
+   "aliases": [
+    "Tambo Market",
+    "Palengke Tambo"
+   ]
+  },
+  {
+   "id": "tibanga-barangay-hall",
+   "name": "Tibanga Barangay Hall",
+   "type": "townhall",
+   "lat": 8.24012,
+   "lon": 124.24079,
+   "aliases": []
+  },
+  {
+   "id": "tomas-l-cabili-barangay-hall",
+   "name": "Tomas L. Cabili Barangay Hall",
+   "type": "townhall",
+   "lat": 8.21007,
+   "lon": 124.22101,
+   "aliases": []
+  },
+  {
+   "id": "tubod-barangay-hall",
+   "name": "Tubod Barangay Hall",
+   "type": "townhall",
+   "lat": 8.21391,
+   "lon": 124.24241,
+   "aliases": []
+  },
+  {
+   "id": "unicity",
+   "name": "Unicity",
+   "type": "marketplace",
+   "lat": 8.22797,
+   "lon": 124.2414,
+   "aliases": []
+  },
+  {
+   "id": "upper-hinaplanon-barangay-hall",
+   "name": "Upper Hinaplanon Barangay Hall",
+   "type": "townhall",
+   "lat": 8.25473,
+   "lon": 124.26846,
+   "aliases": []
+  },
+  {
+   "id": "villa-verde-barangay-hall",
+   "name": "Villa Verde Barangay Hall",
+   "type": "townhall",
+   "lat": 8.23291,
+   "lon": 124.24297,
+   "aliases": []
+  }
+ ]
+}

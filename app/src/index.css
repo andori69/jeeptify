@@ -1,0 +1,206 @@
+/*
+  Jeeptify brand tokens: Signboard identity.
+  Harbor ink and lamp yellow, from a jeepney's destination board and headlamps. Yellow is the only loud colour;
+  keep it on ink or with a label (yellow on white is under 3:1). Every text/background pair stays AA (see theme.test.ts).
+*/
+@import '@fontsource/barlow/400.css';
+@import '@fontsource/barlow/600.css';
+@import '@fontsource/barlow-condensed/700.css';
+
+:root {
+  --harbor: #17262e;
+  --harbor-deep: #0f1b21;
+  --harbor-tint: #e6edf0;
+  --lamp: #f2b31b;
+  --lamp-ink: #17262e;
+  --ground: #f1f3f4;
+  --panel: #ffffff;
+  --line: #d3dce1;
+  --ink: #17262e;
+  --muted: #536771;
+  --ok: #1f7a4d;
+  --warn: #8a5a00;
+  --warn-tint: #fff1cc;
+  --bad: #b3261e;
+  --waiting: #a63d57;
+  --idle: #56656b;
+  --sim: #5b4b9a;
+  --white: #ffffff;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  font-family: 'Barlow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --display: 'Barlow Condensed', 'Barlow', system-ui, sans-serif;
+  font-size: 16px;
+  color: var(--ink);
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--ground); font-variant-numeric: tabular-nums; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3, .eta-big, .plate, .state, .go, .btn-primary { font-family: var(--display); }
+h1, h2, h3 { text-wrap: balance; text-transform: uppercase; letter-spacing: .03em; font-weight: 700; }
+p, .note { text-wrap: pretty; }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+html { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; overscroll-behavior: none; }
+:focus-visible { outline: 3px solid var(--harbor); outline-offset: 2px; }
+.top :focus-visible { outline-color: var(--lamp); }
+::selection { background: var(--lamp); color: var(--lamp-ink); }
+small { font-size: .875rem; }
+.note { font-size: .9rem; color: var(--muted); line-height: 1.45; }
+.grow { flex: 1; min-width: 0; }
+.pad { padding: 10px; }
+
+/* shell: slim ink bar, then the map (or the trip form) */
+.app { display: flex; flex-direction: column; height: 100dvh; max-width: 430px; margin: 0 auto; background: var(--ground); }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 52px; flex: none; padding: 0 max(14px, env(safe-area-inset-right)) 0 max(14px, env(safe-area-inset-left)); padding-top: env(safe-area-inset-top); background: var(--harbor); color: var(--white); }
+.top h1 { line-height: 0; }
+.logo { height: 26px; width: auto; display: block; }
+.mode { font-weight: 600; font-size: .9rem; color: #cfd8dc; text-transform: uppercase; letter-spacing: .06em; }
+.foot { flex: none; font-size: .72rem; color: var(--muted); padding: 5px 14px; background: var(--panel); border-top: 1px solid var(--line); }
+
+/* the screen is the map; panels float on top of it */
+.screen { flex: 1; position: relative; min-height: 0; overflow: hidden; }
+.screen > .mapwrap { position: absolute; inset: 0; }
+.mapwrap { position: relative; min-height: 240px; height: 100%; }
+.map { height: 100%; width: 100%; background: #e9eceb; }
+.panel { position: absolute; z-index: 600; top: 14px; left: 14px; width: 372px; max-height: calc(100% - 28px); overflow-y: auto; overscroll-behavior: contain; display: flex; flex-direction: column; gap: 14px; padding: 16px 16px calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--panel); border-radius: 6px; box-shadow: 0 1px 3px rgba(23, 38, 46, .25), 0 8px 24px rgba(23, 38, 46, .18); }
+.panel > * { flex-shrink: 0; }
+.panel h3 { font-size: 1rem; }
+
+/* controls */
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: var(--white); }
+.seg button { border: 0; background: transparent; color: var(--ink); padding: 8px 14px; min-height: 44px; font-weight: 600; }
+.seg button.on { background: var(--ink); color: var(--white); }
+.top .seg { border-color: rgba(255, 255, 255, .35); }
+.top .seg button { color: var(--white); min-height: 36px; padding: 4px 12px; text-transform: uppercase; font-family: var(--display); letter-spacing: .05em; }
+.top .seg button.on { background: var(--lamp); color: var(--lamp-ink); }
+label { display: flex; flex-direction: column; gap: 4px; font-size: .8rem; color: var(--muted); }
+select { padding: 10px 12px; border: 1px solid var(--line); border-radius: 4px; background: var(--white); color: var(--ink); font-size: 1rem; min-height: 44px; }
+select:disabled { background: var(--ground); color: var(--muted); }
+.btn-primary { padding: 14px; border: 0; border-radius: 4px; background: var(--harbor); color: var(--white); font-size: 1.15rem; text-transform: uppercase; letter-spacing: .05em; }
+.btn-primary:disabled { opacity: .35; cursor: not-allowed; }
+.btn-secondary { padding: 11px; min-height: 44px; border: 1px solid var(--harbor); color: var(--harbor); background: var(--white); border-radius: 4px; font-weight: 600; }
+.btn-secondary:disabled { opacity: .6; cursor: progress; }
+.link { background: none; border: 0; color: var(--harbor); text-decoration: underline; padding: 4px 6px; min-height: 44px; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: .8rem; font-weight: 700; color: var(--white); }
+.badge-ok { background: var(--ok); } .badge-idle { background: var(--idle); } .badge-warn { background: var(--warn); }
+.badge-bad { background: var(--bad); } .badge-sim { background: var(--harbor); }
+
+/* route code, painted like a jeepney signboard */
+.plate { display: inline-block; white-space: nowrap; flex: none; background: var(--lamp); color: var(--lamp-ink); border: 2px solid var(--lamp-ink); border-radius: 3px; padding: 0 7px; font-weight: 700; letter-spacing: .04em; font-size: 1.05rem; line-height: 1.4; }
+
+/* trip form (before the map) */
+.welcome { flex: 1; overflow-y: auto; padding: clamp(16px, 6vh, 56px) 16px 24px; display: flex; justify-content: center; align-items: flex-start; }
+.plan { width: 100%; max-width: 460px; display: flex; flex-direction: column; gap: 14px; }
+.plan h2 { font-size: 2.4rem; line-height: 1; }
+.ceb { color: var(--muted); font-weight: 600; margin-top: -8px; }
+.fields { background: var(--white); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.field { display: flex; flex-direction: row; align-items: center; font-size: 1rem; color: var(--ink); gap: 12px; padding: 12px 14px; min-height: 64px; }
+.field + .field { border-top: 1px solid var(--line); }
+.field:focus-within { outline: 3px solid var(--harbor); outline-offset: -3px; }
+.field small { display: block; color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; }
+.field b { display: block; font-size: 1.05rem; }
+.field input { border: 0; outline: 0; background: transparent; width: 100%; padding: 2px 0; font-size: 1.05rem; }
+.field input::placeholder { color: var(--muted); }
+.list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--white); }
+.list li + li { border-top: 1px solid var(--line); }
+.row { width: 100%; display: flex; justify-content: space-between; gap: 8px; text-align: left; padding: 13px 12px; background: var(--white); border: 0; min-height: 48px; }
+.row small { color: var(--muted); text-transform: capitalize; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.chip { padding: 10px 14px; border: 1px solid var(--line); color: var(--ink); background: var(--white); border-radius: 4px; font-weight: 600; min-height: 44px; }
+
+/* results panel */
+.route-sum { position: relative; display: flex; flex-direction: column; gap: 10px; padding-right: 96px; }
+.route-sum .end { position: relative; display: flex; align-items: flex-start; gap: 10px; }
+.route-sum small { display: block; color: var(--muted); font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; }
+.route-sum b { font-size: 1.02rem; }
+.route-sum .end.from::after { content: ''; position: absolute; left: 9px; top: 26px; bottom: -8px; width: 2px; background: repeating-linear-gradient(var(--line) 0 4px, transparent 4px 8px); }
+.edit { position: absolute; right: -6px; top: 0; }
+.card { width: 100%; display: flex; gap: 12px; justify-content: space-between; text-align: left; padding: 12px; background: var(--white); border: 0; }
+.card.sel { background: var(--harbor-tint); outline: 2px solid var(--harbor); outline-offset: -2px; }
+.card small { display: block; color: var(--muted); margin-top: 3px; line-height: 1.4; }
+.card-top { display: flex; align-items: center; gap: 8px; }
+.rname { font-weight: 700; }
+.side { display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; text-align: right; min-width: 84px; gap: 6px; }
+.eta { display: flex; flex-direction: column; align-items: flex-end; }
+.eta-big { font-size: 1.7rem; line-height: 1; color: var(--harbor); }
+.eta-cap { font-size: .75rem; color: var(--muted); margin-top: 2px; }
+.fare { font-size: .95rem; white-space: nowrap; }
+.opts { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.share { flex-direction: row; align-items: flex-start; gap: 10px; color: var(--ink); font-size: .95rem; }
+.share input { width: 22px; height: 22px; margin-top: 2px; accent-color: var(--harbor); flex: none; }
+.share small { display: block; color: var(--muted); margin-top: 2px; }
+.about summary { cursor: pointer; color: var(--harbor); font-weight: 600; min-height: 44px; display: flex; align-items: center; }
+.legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.legend li { display: flex; align-items: center; gap: 12px; font-size: .9rem; }
+.legend .pin { flex: none; }
+
+/* driver */
+.state { padding: 14px; border-radius: 4px; font-weight: 700; font-size: 1.4rem; color: var(--white); text-transform: uppercase; letter-spacing: .04em; }
+.state small { display: block; font-family: 'Barlow', system-ui, sans-serif; font-weight: 400; text-transform: none; letter-spacing: 0; margin-top: 2px; font-size: .9rem; }
+.state-off { background: var(--idle); } .state-on { background: var(--ok); } .state-wait { background: var(--warn); } .state-err { background: var(--bad); }
+.routebox { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-weight: 700; }
+.routebox .note { flex-basis: 100%; font-weight: 400; }
+.go { padding: 18px; border: 0; border-radius: 4px; color: var(--white); font-weight: 700; font-size: 1.4rem; text-transform: uppercase; letter-spacing: .05em; }
+.go.start { background: var(--ok); } .go.stop { background: var(--bad); }
+.offroute { background: var(--warn-tint); color: var(--warn); border: 1px solid var(--warn); border-radius: 4px; padding: 10px; font-weight: 700; }
+.line { display: grid; grid-template-columns: 1fr auto; gap: 0 10px; padding: 10px 12px; }
+.line b { text-align: right; font-size: 1.15rem; color: var(--harbor); }
+.line small { grid-column: 2; text-align: right; color: var(--muted); }
+.wait { display: flex; gap: 10px; align-items: center; padding: 10px 12px; }
+.wait small { display: block; color: var(--muted); }
+.waitico { width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 14px solid var(--waiting); flex: none; }
+.right { text-align: right; font-weight: 700; } .right small { color: var(--muted); font-weight: 400; }
+.count { display: inline-block; min-width: 22px; text-align: center; background: var(--waiting); color: var(--white); border-radius: 3px; font-size: .85rem; padding: 0 5px; margin-left: 4px; }
+
+/* map: quiet grey base so the route is the only colour; shapes differ as well as colour */
+.leaflet-tile-pane { filter: grayscale(1) contrast(.85) brightness(1.1); }
+.maptoast { position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%); z-index: 1000; background: var(--ink); color: var(--white); padding: 8px 12px; border-radius: 4px; font-size: .85rem; max-width: 90%; text-align: center; }
+.pin { display: block; }
+.pin svg { display: block; overflow: visible; filter: drop-shadow(0 1px 1.5px rgba(23, 38, 46, .45)); }
+.pin-stop { width: 14px; height: 14px; background: var(--white); border: 3px solid var(--harbor); border-radius: 50%; }
+.pin-lm { width: 10px; height: 10px; background: var(--ink); border: 2px solid var(--white); border-radius: 2px; }
+.pin-jeep, .pin-sim { position: relative; width: 50px; padding-top: 16px; }
+.pin-sim svg { opacity: .8; }
+.pin-sim .jcode { border-style: dashed; }
+.jcode { position: absolute; top: 0; left: 50%; transform: translateX(-50%); background: var(--lamp); color: var(--lamp-ink); border: 2px solid var(--harbor); border-radius: 3px; padding: 0 5px; font: 700 .8rem/1.15 var(--display); letter-spacing: .03em; white-space: nowrap; }
+.ico { display: inline-block; vertical-align: middle; flex: none; }
+.arrow { display: block; width: 0; height: 0; margin: 2px auto; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 12px solid var(--harbor); filter: drop-shadow(0 0 1px #fff); }
+.leaflet-top.leaflet-left { left: auto; right: 0; }
+.leaflet-top.leaflet-left .leaflet-control { margin-left: 0; margin-right: 10px; }
+
+/* press feedback: tactile on touch; hover only with a real pointer */
+button, .card, .chip, .row { transition: background-color .15s ease, box-shadow .15s ease, border-color .15s ease, transform 160ms var(--ease-out); }
+.card:active, .chip:active, .row:active, .btn-primary:active, .btn-secondary:active:not(:disabled), .go:active, .seg button:active { transform: scale(.97); }
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover:not(:disabled) { background: var(--harbor-deep); }
+  .btn-secondary:hover:not(:disabled), .chip:hover, .row:hover { background: var(--harbor-tint); }
+  .card:hover:not(.sel) { background: var(--ground); }
+}
+@media (pointer: coarse) { .leaflet-bar a { width: 44px; height: 44px; line-height: 44px; } }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; }
+  button, .card, .chip, .row { transition: background-color .15s ease, box-shadow .15s ease, border-color .15s ease; }
+  .card:active, .chip:active, .row:active, .btn-primary:active, .btn-secondary:active:not(:disabled), .go:active, .seg button:active { transform: none; }
+  .panel.sheet { transition: none; }
+}
+
+/* phone layout only: map on top, panels below; results use a draggable bottom sheet */
+.grip { display: none; }
+.foot { display: none; }
+.screen.stacked { display: grid; grid-template-rows: 40% 1fr; }
+.screen.stacked > .mapwrap { position: relative; inset: auto; order: -1; }
+.screen.stacked > .panel { position: static; width: auto; max-height: none; border-radius: 0; box-shadow: none; border-top: 1px solid var(--line); }
+.panel.sheet { top: auto; left: 0; right: 0; bottom: 0; width: auto; height: 88%; max-height: none; border-radius: 0; border-top: 1px solid var(--line); box-shadow: 0 -3px 14px rgba(0, 0, 0, .22); transition: transform .3s var(--ease-drawer); overflow-y: hidden; padding-top: 0; }
+/* The sheet keeps its height while you scroll the list inside it; the part pushed below the screen is added as
+   bottom padding so the end of the list can still be scrolled into view. The map above is never covered more. */
+.screen.sheeted { container-type: size; }
+.sheet-full { transform: translateY(0); overflow-y: auto; }
+.sheet-half { transform: translateY(43.18%); overflow-y: auto; padding-bottom: calc(16px + 38cqh); }
+.sheet-peek { transform: translateY(70.45%); }
+.grip { display: flex; align-items: center; justify-content: center; position: sticky; top: 0; z-index: 2; margin: 0 -16px; width: calc(100% + 32px); height: 44px; flex: none; border: 0; background: var(--panel); touch-action: none; cursor: grab; }
+.grip-bar { width: 40px; height: 5px; border-radius: 3px; background: var(--line); }
+.plan h2 { font-size: 2rem; }
+.fico { display: grid; place-items: center; width: 22px; flex: none; }
+.swatch { display: inline-block; width: 16px; height: 16px; flex: none; border: 2px solid var(--harbor); border-radius: 3px; }
